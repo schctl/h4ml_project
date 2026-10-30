@@ -1,0 +1,195 @@
+{
+ "port": "/dev/ttyACM0",
+ "subset": "test",
+ "host_write_piece_bytes": 512,
+ "host_write_gap_ms": 5.0,
+ "ble_during_test": false,
+ "info": {
+  "fw": "1.0.0",
+  "built": "Oct 30 2026 22:50:21",
+  "model_id": "a860cafacae7",
+  "feature_spec_version": 2,
+  "n_fft": 1024,
+  "n_bands": 64,
+  "n_classes": 2,
+  "core_clock_hz": 64000000,
+  "ble_on": 1,
+  "ble_addr": "a0:13:0e:90:06:83",
+  "opt": 1,
+  "nvmc_icachecnf": 1,
+  "boot_resetreas": 4,
+  "boot_crumb": 6,
+  "wdt_running": 1
+ },
+ "selftest": {
+  "selftest": "PASS",
+  "n": 16,
+  "max_feat_err": 0.0002668,
+  "tol_feat": 0.001,
+  "max_logit_err_ref_in": 2.861e-06,
+  "tol_logit": 0.0001,
+  "max_logit_err_dev_in": 0.000226,
+  "pred_f32_agree": 16,
+  "i8_exact": 32,
+  "i8_total": 32,
+  "qin_mismatch": 1,
+  "qin_total": 1024,
+  "qin_max_diff": 1,
+  "pred_i8_dev_agree": 16
+ },
+ "n_sent": 1452,
+ "n_results": 1452,
+ "n_missing": 0,
+ "wall_s": 112.630750438002,
+ "counters": {
+  "rx_frames": 1454,
+  "crc_err": 0,
+  "seq_err": 0,
+  "len_err": 0,
+  "windows_done": 1452,
+  "notify_fail": 0,
+  "ble_queue_overflow": 0,
+  "ble_max_write": 0,
+  "n_arrivals": 0
+ },
+ "mem_before": {
+  "stack_size": 32768,
+  "stack_used_hwm": 1200,
+  "heap_arena": 29720,
+  "heap_in_use": 18200,
+  "heap_free_in_arena": 11520
+ },
+ "mem_after": {
+  "stack_size": 32768,
+  "stack_used_hwm": 1200,
+  "heap_arena": 29720,
+  "heap_in_use": 18200,
+  "heap_free_in_arena": 11520
+ },
+ "agreement": {
+  "f32_pred_agree": 1.0,
+  "f32_logit_max_abs_diff": 0.0015726089477539062,
+  "f32_logit_mean_abs_diff": 5.614613837678917e-05,
+  "i8_exact_elements": 0.9972451790633609,
+  "i8_exact_windows": 0.9951790633608816,
+  "i8_max_abs_diff": 1,
+  "i8_pred_agree": 1.0,
+  "n_windows_i8_mismatch": 7
+ },
+ "device_test_accuracy": {
+  "f32": {
+   "n": 1452,
+   "accuracy": 0.953168044077135,
+   "balanced_accuracy": 0.9682715748415407,
+   "confusion": [
+    [
+     278,
+     2
+    ],
+    [
+     66,
+     1106
+    ]
+   ]
+  },
+  "int8": {
+   "n": 1452,
+   "accuracy": 0.953168044077135,
+   "balanced_accuracy": 0.9682715748415407,
+   "confusion": [
+    [
+     278,
+     2
+    ],
+    [
+     66,
+     1106
+    ]
+   ]
+  }
+ },
+ "host_test_accuracy": {
+  "f32": {
+   "n": 1452,
+   "accuracy": 0.953168044077135,
+   "balanced_accuracy": 0.9682715748415407,
+   "confusion": [
+    [
+     278,
+     2
+    ],
+    [
+     66,
+     1106
+    ]
+   ]
+  },
+  "int8": {
+   "n": 1452,
+   "accuracy": 0.953168044077135,
+   "balanced_accuracy": 0.9682715748415407,
+   "confusion": [
+    [
+     278,
+     2
+    ],
+    [
+     66,
+     1106
+    ]
+   ]
+  }
+ },
+ "latency_us": {
+  "feat_us": {
+   "n": 1452,
+   "mean": 2846.9765840220384,
+   "std": 14.039427064450912,
+   "min": 2801.0,
+   "median": 2853.5,
+   "p95": 2862.0,
+   "p99": 2875.0,
+   "max": 2881.0
+  },
+  "fft_us": {
+   "n": 1452,
+   "mean": 1134.9256198347107,
+   "std": 11.681669818128393,
+   "min": 1113.0,
+   "median": 1132.0,
+   "p95": 1158.0,
+   "p99": 1173.49,
+   "max": 1176.0
+  },
+  "mlp_f32_us": {
+   "n": 1452,
+   "mean": 933.6825068870523,
+   "std": 9.085704406897234,
+   "min": 892.0,
+   "median": 937.0,
+   "p95": 938.0,
+   "p99": 939.0,
+   "max": 941.0
+  },
+  "mlp_i8_us": {
+   "n": 1452,
+   "mean": 739.3684573002755,
+   "std": 15.746088659994172,
+   "min": 704.0,
+   "median": 750.0,
+   "p95": 754.0,
+   "p99": 755.0,
+   "max": 756.0
+  },
+  "rtt_us": {
+   "n": 1452,
+   "mean": 57731.00096424614,
+   "std": 275.92333261116767,
+   "min": 56775.868000841,
+   "median": 57739.56399934832,
+   "p95": 58134.608249565645,
+   "p99": 58252.668670938874,
+   "max": 59536.179000133416
+  }
+ }
+}

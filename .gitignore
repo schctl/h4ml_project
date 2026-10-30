@@ -1,0 +1,13 @@
+# environment and build outputs
+.venv/
+__pycache__/
+*.pyc
+firmware/leak_nano/build/
+compile.log
+
+# dataset (public; download steps in README.md) and derived caches
+data/raw/
+data/cache/
+
+# report (not part of the published implementation)
+report/

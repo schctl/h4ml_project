@@ -1,0 +1,104 @@
+{
+ "host_env": {
+  "os": "Linux-7.2.11-arch1-1-x86_64-with-glibc2.44",
+  "python": "3.11.15",
+  "bleak": "",
+  "bluetoothctl": "bluetoothctl: 5.87",
+  "bluetoothd": "5.87",
+  "adapter_usb": "Bus 001 Device 004: ID 0bda:4852 Realtek Semiconductor Corp. Bluetooth Radio",
+  "controller": "Controller 9C:2F:9D:91:6C:BA (public)\n\tManufacturer: 0x005d (93)\n\tVersion: 0x0b (11)",
+  "hci_version": ""
+ },
+ "device_address": "A0:13:0E:90:06:83",
+ "att_mtu": 247,
+ "chunk_payload_bytes": 232,
+ "frames_per_window": 9,
+ "burst": {
+  "max_inflight_windows": 4,
+  "n_windows": 1,
+  "n_results": 1,
+  "n_dropped": 0,
+  "send_s": 0.025124795999545313,
+  "payload_bytes_sent": 2048,
+  "write_rate_payload_Bps": 81513.09965012503,
+  "goodput_payload_Bps": 3110.8349448501376,
+  "nano_counters": {
+   "rx_frames": 10,
+   "crc_err": 0,
+   "seq_err": 0,
+   "len_err": 0,
+   "windows_done": 1,
+   "notify_fail": 0,
+   "ble_queue_overflow": 0,
+   "ble_max_write": 243,
+   "n_arrivals": 9
+  },
+  "write_arrival_gaps_ms": {
+   "n": 8,
+   "frac_gt_1ms": 1.0,
+   "gt_1ms_median": 69.0215,
+   "gt_1ms_p10": 44.6304,
+   "gt_1ms_hist_0p5ms": {
+    "43.5": 1,
+    "45.0": 1,
+    "51.5": 1,
+    "53.0": 1,
+    "85.5": 1,
+    "87.0": 2,
+    "88.5": 1
+   }
+  }
+ },
+ "realtime": {
+  "duration_s": 30.0,
+  "n_windows": 117,
+  "n_dropped": 112,
+  "n_late": 5,
+  "required_payload_Bps": 8000.0,
+  "achieved_payload_Bps": 8061.852447311734,
+  "schedule_overrun_windows": 0,
+  "send_ms": {
+   "n": 117,
+   "mean": 24.21691531624394,
+   "std": 0.6056760920804348,
+   "min": 23.123650000343332,
+   "median": 24.155663000783534,
+   "p95": 25.40098199970089,
+   "p99": 25.786881760104734,
+   "max": 26.25646200067422
+  },
+  "start_lag_ms": {
+   "n": 117,
+   "mean": 1.6122893244662406,
+   "std": 0.5036360509969315,
+   "min": 0.020228999346727505,
+   "median": 1.6103560001283768,
+   "p95": 2.3602131997904507,
+   "p99": 2.8610641997511266,
+   "max": 3.2892219996938366
+  },
+  "result_latency_ms": {
+   "n": 5,
+   "mean": 1284.4458002000465,
+   "std": 483.8069130563755,
+   "min": 602.1224570004051,
+   "median": 1300.8774509999057,
+   "p95": 1894.2646549996425,
+   "p99": 1946.6977189995669,
+   "max": 1959.805984999548
+  },
+  "f32_pred_agree_with_host": 1.0,
+  "nano_counters": {
+   "rx_frames": 484,
+   "crc_err": 0,
+   "seq_err": 0,
+   "len_err": 0,
+   "windows_done": 53,
+   "notify_fail": 0,
+   "ble_queue_overflow": 0,
+   "ble_max_write": 243,
+   "n_arrivals": 483
+  }
+ },
+ "parser_errors": 0
+}

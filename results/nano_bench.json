@@ -1,0 +1,202 @@
+{
+ "info": {
+  "fw": "1.0.0",
+  "built": "Oct 30 2026 22:50:21",
+  "model_id": "a860cafacae7",
+  "feature_spec_version": 2,
+  "n_fft": 1024,
+  "n_bands": 64,
+  "n_classes": 2,
+  "core_clock_hz": 64000000,
+  "ble_on": 1,
+  "ble_addr": "a0:13:0e:90:06:83",
+  "opt": 1,
+  "nvmc_icachecnf": 1,
+  "boot_resetreas": 4,
+  "boot_crumb": 6,
+  "wdt_running": 1
+ },
+ "mem_boot": {
+  "stack_size": 32768,
+  "stack_used_hwm": 1200,
+  "heap_arena": 29720,
+  "heap_in_use": 23624,
+  "heap_free_in_arena": 6096
+ },
+ "settings": [
+  {
+   "ble_on": 0,
+   "opt": 0,
+   "selftest": {
+    "selftest": "PASS",
+    "n": 16,
+    "max_feat_err": 0.0002668,
+    "tol_feat": 0.001,
+    "max_logit_err_ref_in": 1.907e-06,
+    "tol_logit": 0.0001,
+    "max_logit_err_dev_in": 0.0002241,
+    "pred_f32_agree": 16,
+    "i8_exact": 32,
+    "i8_total": 32,
+    "qin_mismatch": 1,
+    "qin_total": 1024,
+    "qin_max_diff": 1,
+    "pred_i8_dev_agree": 16
+   },
+   "profile_us": {
+    "profile_windows": 128,
+    "prep_us": 515.6,
+    "fft_us": 1136.6,
+    "maglog_us": 10464.3,
+    "band_std_us": 165.0
+   },
+   "n_results": 200,
+   "pred_f32_agree_host": 1.0,
+   "i8_exact_windows_vs_host": 1.0,
+   "counters": {
+    "rx_frames": 201,
+    "crc_err": 0,
+    "seq_err": 0,
+    "len_err": 0,
+    "windows_done": 200,
+    "notify_fail": 0,
+    "ble_queue_overflow": 0,
+    "ble_max_write": 0,
+    "n_arrivals": 0
+   },
+   "latency_us": {
+    "feat_us": {
+     "n": 200,
+     "mean": 12193.065,
+     "std": 19.8819208076081,
+     "min": 12151.0,
+     "median": 12192.5,
+     "p95": 12228.0,
+     "p99": 12236.03,
+     "max": 12246.0
+    },
+    "fft_us": {
+     "n": 200,
+     "mean": 1136.425,
+     "std": 11.982669777641375,
+     "min": 1115.0,
+     "median": 1132.0,
+     "p95": 1157.0,
+     "p99": 1159.0,
+     "max": 1159.0
+    },
+    "mlp_f32_us": {
+     "n": 200,
+     "mean": 2412.84,
+     "std": 61.254994898375436,
+     "min": 2242.0,
+     "median": 2411.0,
+     "p95": 2515.0,
+     "p99": 2531.01,
+     "max": 2532.0
+    },
+    "mlp_i8_us": {
+     "n": 200,
+     "mean": 2181.485,
+     "std": 11.252545267627232,
+     "min": 2172.0,
+     "median": 2173.0,
+     "p95": 2200.0,
+     "p99": 2200.0,
+     "max": 2201.0
+    }
+   }
+  },
+  {
+   "ble_on": 0,
+   "opt": 1,
+   "selftest": {
+    "selftest": "PASS",
+    "n": 16,
+    "max_feat_err": 0.0002668,
+    "tol_feat": 0.001,
+    "max_logit_err_ref_in": 2.861e-06,
+    "tol_logit": 0.0001,
+    "max_logit_err_dev_in": 0.000226,
+    "pred_f32_agree": 16,
+    "i8_exact": 32,
+    "i8_total": 32,
+    "qin_mismatch": 1,
+    "qin_total": 1024,
+    "qin_max_diff": 1,
+    "pred_i8_dev_agree": 16
+   },
+   "profile_us": {
+    "profile_windows": 128,
+    "prep_us": 517.5,
+    "fft_us": 1135.4,
+    "maglog_us": 1104.0,
+    "band_std_us": 164.2
+   },
+   "n_results": 200,
+   "pred_f32_agree_host": 1.0,
+   "i8_exact_windows_vs_host": 1.0,
+   "counters": {
+    "rx_frames": 201,
+    "crc_err": 0,
+    "seq_err": 0,
+    "len_err": 0,
+    "windows_done": 200,
+    "notify_fail": 0,
+    "ble_queue_overflow": 0,
+    "ble_max_write": 0,
+    "n_arrivals": 0
+   },
+   "latency_us": {
+    "feat_us": {
+     "n": 200,
+     "mean": 2846.12,
+     "std": 14.371346492239342,
+     "min": 2808.0,
+     "median": 2852.0,
+     "p95": 2864.05,
+     "p99": 2874.05,
+     "max": 2881.0
+    },
+    "fft_us": {
+     "n": 200,
+     "mean": 1134.36,
+     "std": 11.684194452336028,
+     "min": 1114.0,
+     "median": 1131.0,
+     "p95": 1157.05,
+     "p99": 1175.0,
+     "max": 1175.0
+    },
+    "mlp_f32_us": {
+     "n": 200,
+     "mean": 933.0,
+     "std": 10.219099764656375,
+     "min": 892.0,
+     "median": 937.0,
+     "p95": 938.0,
+     "p99": 938.01,
+     "max": 939.0
+    },
+    "mlp_i8_us": {
+     "n": 200,
+     "mean": 740.945,
+     "std": 16.857104585307646,
+     "min": 705.0,
+     "median": 751.0,
+     "p95": 754.0,
+     "p99": 754.0,
+     "max": 754.0
+    }
+   }
+  }
+ ],
+ "flash_bytes": 422640,
+ "mem_after": {
+  "stack_size": 32768,
+  "stack_used_hwm": 1200,
+  "heap_arena": 29720,
+  "heap_in_use": 18200,
+  "heap_free_in_arena": 11520
+ }
+}

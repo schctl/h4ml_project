@@ -1,0 +1,2074 @@
+{
+ "feature_config": {
+  "fs": 4000,
+  "n_fft": 1024,
+  "hop": 1024,
+  "n_bands": 64,
+  "f_low": 20.0,
+  "f_high": 2000.0,
+  "eps": 1e-06,
+  "spec_version": 2
+ },
+ "main": {
+  "LO_to_BR": {
+   "summary": {
+    "balanced_accuracy_mean": 0.5001442531313904,
+    "balanced_accuracy_std": 0.0002996643265261483,
+    "balanced_accuracy_min": 0.49989424418652656,
+    "balanced_accuracy_max": 0.5007213344635971,
+    "recording_vote_ba_mean": 0.5,
+    "n_seeds": 5
+   },
+   "runs": [
+    {
+     "seed": 0,
+     "n_train": 8128,
+     "n_val": 558,
+     "val_experiments": [
+      "LO_LC_ND_NN",
+      "LO_NL_T_NN"
+     ],
+     "epochs_run": 65,
+     "best_epoch": 50,
+     "class_weights": [
+      2.7348586810228803,
+      0.611863896416742
+     ],
+     "train_seconds": 9.514745473861694,
+     "test": {
+      "n": 9331,
+      "balanced_accuracy": 0.5000565934655705,
+      "accuracy": 0.7839459864966242,
+      "recall": {
+       "no_leak": 0.0075910931174089065,
+       "leak": 0.9925220938137321
+      },
+      "confusion": [
+       [
+        15,
+        1961
+       ],
+       [
+        55,
+        7300
+       ]
+      ],
+      "per_condition": {
+       "0.18_N": {
+        "n": 1448,
+        "accuracy": 0.8107734806629834,
+        "recall": {
+         "no_leak": 0.0,
+         "leak": 0.9982993197278912
+        }
+       },
+       "0.47_N": {
+        "n": 1426,
+        "accuracy": 0.7931276297335204,
+        "recall": {
+         "no_leak": 0.007042253521126761,
+         "leak": 0.98861646234676
+        }
+       },
+       "ND_N": {
+        "n": 1459,
+        "accuracy": 0.7971213159698424,
+        "recall": {
+         "no_leak": 0.010067114093959731,
+         "leak": 0.9991386735572783
+        }
+       },
+       "ND_NN": {
+        "n": 1468,
+        "accuracy": 0.8065395095367848,
+        "recall": {
+         "no_leak": 0.0,
+         "leak": 1.0
+        }
+       },
+       "T_N": {
+        "n": 1836,
+        "accuracy": 0.7293028322440087,
+        "recall": {
+         "no_leak": 0.010460251046025104,
+         "leak": 0.9823269513991163
+        }
+       },
+       "T_NN": {
+        "n": 1694,
+        "accuracy": 0.781582054309327,
+        "recall": {
+         "no_leak": 0.013888888888888888,
+         "leak": 0.9887556221889056
+        }
+       }
+      },
+      "recording_vote": {
+       "n": 60,
+       "balanced_accuracy": 0.5,
+       "accuracy": 0.8,
+       "confusion": [
+        [
+         0,
+         12
+        ],
+        [
+         0,
+         48
+        ]
+       ]
+      }
+     }
+    },
+    {
+     "seed": 1,
+     "n_train": 8062,
+     "n_val": 624,
+     "val_experiments": [
+      "LO_LC_0.18_N",
+      "LO_NL_ND_N"
+     ],
+     "epochs_run": 28,
+     "best_epoch": 13,
+     "class_weights": [
+      2.8228291316526612,
+      0.607627374133253
+     ],
+     "train_seconds": 4.372608661651611,
+     "test": {
+      "n": 9331,
+      "balanced_accuracy": 0.49993201903467027,
+      "accuracy": 0.7881256028292788,
+      "recall": {
+       "no_leak": 0.0,
+       "leak": 0.9998640380693405
+      },
+      "confusion": [
+       [
+        0,
+        1976
+       ],
+       [
+        1,
+        7354
+       ]
+      ],
+      "per_condition": {
+       "0.18_N": {
+        "n": 1448,
+        "accuracy": 0.8121546961325967,
+        "recall": {
+         "no_leak": 0.0,
+         "leak": 1.0
+        }
+       },
+       "0.47_N": {
+        "n": 1426,
+        "accuracy": 0.8008415147265077,
+        "recall": {
+         "no_leak": 0.0,
+         "leak": 1.0
+        }
+       },
+       "ND_N": {
+        "n": 1459,
+        "accuracy": 0.7957505140507197,
+        "recall": {
+         "no_leak": 0.0,
+         "leak": 1.0
+        }
+       },
+       "ND_NN": {
+        "n": 1468,
+        "accuracy": 0.8065395095367848,
+        "recall": {
+         "no_leak": 0.0,
+         "leak": 1.0
+        }
+       },
+       "T_N": {
+        "n": 1836,
+        "accuracy": 0.7391067538126361,
+        "recall": {
+         "no_leak": 0.0,
+         "leak": 0.9992636229749632
+        }
+       },
+       "T_NN": {
+        "n": 1694,
+        "accuracy": 0.7874852420306966,
+        "recall": {
+         "no_leak": 0.0,
+         "leak": 1.0
+        }
+       }
+      },
+      "recording_vote": {
+       "n": 60,
+       "balanced_accuracy": 0.5,
+       "accuracy": 0.8,
+       "confusion": [
+        [
+         0,
+         12
+        ],
+        [
+         0,
+         48
+        ]
+       ]
+      }
+     }
+    },
+    {
+     "seed": 2,
+     "n_train": 8124,
+     "n_val": 562,
+     "val_experiments": [
+      "LO_GL_0.18_N",
+      "LO_NL_T_NN"
+     ],
+     "epochs_run": 42,
+     "best_epoch": 27,
+     "class_weights": [
+      2.733512786002692,
+      0.6119313046098223
+     ],
+     "train_seconds": 7.13517951965332,
+     "test": {
+      "n": 9331,
+      "balanced_accuracy": 0.5007213344635971,
+      "accuracy": 0.7879112635301683,
+      "recall": {
+       "no_leak": 0.0025303643724696357,
+       "leak": 0.9989123045547247
+      },
+      "confusion": [
+       [
+        5,
+        1971
+       ],
+       [
+        8,
+        7347
+       ]
+      ],
+      "per_condition": {
+       "0.18_N": {
+        "n": 1448,
+        "accuracy": 0.8121546961325967,
+        "recall": {
+         "no_leak": 0.0,
+         "leak": 1.0
+        }
+       },
+       "0.47_N": {
+        "n": 1426,
+        "accuracy": 0.8008415147265077,
+        "recall": {
+         "no_leak": 0.0,
+         "leak": 1.0
+        }
+       },
+       "ND_N": {
+        "n": 1459,
+        "accuracy": 0.7978067169294037,
+        "recall": {
+         "no_leak": 0.010067114093959731,
+         "leak": 1.0
+        }
+       },
+       "ND_NN": {
+        "n": 1468,
+        "accuracy": 0.8065395095367848,
+        "recall": {
+         "no_leak": 0.0,
+         "leak": 1.0
+        }
+       },
+       "T_N": {
+        "n": 1836,
+        "accuracy": 0.7380174291938998,
+        "recall": {
+         "no_leak": 0.0,
+         "leak": 0.9977908689248896
+        }
+       },
+       "T_NN": {
+        "n": 1694,
+        "accuracy": 0.7857142857142857,
+        "recall": {
+         "no_leak": 0.005555555555555556,
+         "leak": 0.9962518740629686
+        }
+       }
+      },
+      "recording_vote": {
+       "n": 60,
+       "balanced_accuracy": 0.5,
+       "accuracy": 0.8,
+       "confusion": [
+        [
+         0,
+         12
+        ],
+        [
+         0,
+         48
+        ]
+       ]
+      }
+     }
+    },
+    {
+     "seed": 3,
+     "n_train": 8114,
+     "n_val": 572,
+     "val_experiments": [
+      "LO_CC_ND_N",
+      "LO_NL_T_N"
+     ],
+     "epochs_run": 41,
+     "best_epoch": 26,
+     "class_weights": [
+      2.7338274932614555,
+      0.6119155354449473
+     ],
+     "train_seconds": 6.83171820640564,
+     "test": {
+      "n": 9331,
+      "balanced_accuracy": 0.49989424418652656,
+      "accuracy": 0.7874825849319472,
+      "recall": {
+       "no_leak": 0.0010121457489878543,
+       "leak": 0.9987763426240652
+      },
+      "confusion": [
+       [
+        2,
+        1974
+       ],
+       [
+        9,
+        7346
+       ]
+      ],
+      "per_condition": {
+       "0.18_N": {
+        "n": 1448,
+        "accuracy": 0.81146408839779,
+        "recall": {
+         "no_leak": 0.0,
+         "leak": 0.9991496598639455
+        }
+       },
+       "0.47_N": {
+        "n": 1426,
+        "accuracy": 0.8008415147265077,
+        "recall": {
+         "no_leak": 0.0,
+         "leak": 1.0
+        }
+       },
+       "ND_N": {
+        "n": 1459,
+        "accuracy": 0.796435915010281,
+        "recall": {
+         "no_leak": 0.006711409395973154,
+         "leak": 0.9991386735572783
+        }
+       },
+       "ND_NN": {
+        "n": 1468,
+        "accuracy": 0.805858310626703,
+        "recall": {
+         "no_leak": 0.0,
+         "leak": 0.9991554054054054
+        }
+       },
+       "T_N": {
+        "n": 1836,
+        "accuracy": 0.7374727668845316,
+        "recall": {
+         "no_leak": 0.0,
+         "leak": 0.9970544918998527
+        }
+       },
+       "T_NN": {
+        "n": 1694,
+        "accuracy": 0.7863046044864227,
+        "recall": {
+         "no_leak": 0.0,
+         "leak": 0.9985007496251874
+        }
+       }
+      },
+      "recording_vote": {
+       "n": 60,
+       "balanced_accuracy": 0.5,
+       "accuracy": 0.8,
+       "confusion": [
+        [
+         0,
+         12
+        ],
+        [
+         0,
+         48
+        ]
+       ]
+      }
+     }
+    },
+    {
+     "seed": 4,
+     "n_train": 8118,
+     "n_val": 568,
+     "val_experiments": [
+      "LO_NL_T_N",
+      "LO_OL_T_N"
+     ],
+     "epochs_run": 77,
+     "best_epoch": 62,
+     "class_weights": [
+      2.7351752021563343,
+      0.6118480554718119
+     ],
+     "train_seconds": 12.32003927230835,
+     "test": {
+      "n": 9331,
+      "balanced_accuracy": 0.5001170745065876,
+      "accuracy": 0.7881256028292788,
+      "recall": {
+       "no_leak": 0.0005060728744939271,
+       "leak": 0.9997280761386812
+      },
+      "confusion": [
+       [
+        1,
+        1975
+       ],
+       [
+        2,
+        7353
+       ]
+      ],
+      "per_condition": {
+       "0.18_N": {
+        "n": 1448,
+        "accuracy": 0.8121546961325967,
+        "recall": {
+         "no_leak": 0.0,
+         "leak": 1.0
+        }
+       },
+       "0.47_N": {
+        "n": 1426,
+        "accuracy": 0.8008415147265077,
+        "recall": {
+         "no_leak": 0.0,
+         "leak": 1.0
+        }
+       },
+       "ND_N": {
+        "n": 1459,
+        "accuracy": 0.796435915010281,
+        "recall": {
+         "no_leak": 0.003355704697986577,
+         "leak": 1.0
+        }
+       },
+       "ND_NN": {
+        "n": 1468,
+        "accuracy": 0.8065395095367848,
+        "recall": {
+         "no_leak": 0.0,
+         "leak": 1.0
+        }
+       },
+       "T_N": {
+        "n": 1836,
+        "accuracy": 0.7391067538126361,
+        "recall": {
+         "no_leak": 0.0,
+         "leak": 0.9992636229749632
+        }
+       },
+       "T_NN": {
+        "n": 1694,
+        "accuracy": 0.7868949232585596,
+        "recall": {
+         "no_leak": 0.0,
+         "leak": 0.9992503748125937
+        }
+       }
+      },
+      "recording_vote": {
+       "n": 60,
+       "balanced_accuracy": 0.5,
+       "accuracy": 0.8,
+       "confusion": [
+        [
+         0,
+         12
+        ],
+        [
+         0,
+         48
+        ]
+       ]
+      }
+     }
+    }
+   ]
+  },
+  "BR_to_LO": {
+   "summary": {
+    "balanced_accuracy_mean": 0.5107599352945454,
+    "balanced_accuracy_std": 0.01378637778410086,
+    "balanced_accuracy_min": 0.4861997240387053,
+    "balanced_accuracy_max": 0.5276862984430987,
+    "recording_vote_ba_mean": 0.49375,
+    "n_seeds": 5
+   },
+   "runs": [
+    {
+     "seed": 0,
+     "n_train": 8681,
+     "n_val": 650,
+     "val_experiments": [
+      "BR_LC_ND_NN",
+      "BR_NL_T_NN"
+     ],
+     "epochs_run": 19,
+     "best_epoch": 4,
+     "class_weights": [
+      2.6859529702970297,
+      0.6143665958952583
+     ],
+     "train_seconds": 3.284278392791748,
+     "test": {
+      "n": 8686,
+      "balanced_accuracy": 0.5276862984430987,
+      "accuracy": 0.7935758692148285,
+      "recall": {
+       "no_leak": 0.07993197278911565,
+       "leak": 0.9754406240970818
+      },
+      "confusion": [
+       [
+        141,
+        1623
+       ],
+       [
+        170,
+        6752
+       ]
+      ],
+      "per_condition": {
+       "0.18_N": {
+        "n": 1442,
+        "accuracy": 0.7981969486823856,
+        "recall": {
+         "no_leak": 0.0,
+         "leak": 0.9922413793103448
+        }
+       },
+       "0.47_N": {
+        "n": 1472,
+        "accuracy": 0.7866847826086957,
+        "recall": {
+         "no_leak": 0.0,
+         "leak": 0.9931389365351629
+        }
+       },
+       "ND_N": {
+        "n": 1490,
+        "accuracy": 0.7865771812080536,
+        "recall": {
+         "no_leak": 0.1488095238095238,
+         "leak": 0.9722703639514731
+        }
+       },
+       "ND_NN": {
+        "n": 1406,
+        "accuracy": 0.7844950213371266,
+        "recall": {
+         "no_leak": 0.014184397163120567,
+         "leak": 0.9777580071174378
+        }
+       },
+       "T_N": {
+        "n": 1452,
+        "accuracy": 0.7871900826446281,
+        "recall": {
+         "no_leak": 0.125,
+         "leak": 0.9453924914675768
+        }
+       },
+       "T_NN": {
+        "n": 1424,
+        "accuracy": 0.8188202247191011,
+        "recall": {
+         "no_leak": 0.18705035971223022,
+         "leak": 0.9720767888307156
+        }
+       }
+      },
+      "recording_vote": {
+       "n": 60,
+       "balanced_accuracy": 0.5,
+       "accuracy": 0.8,
+       "confusion": [
+        [
+         0,
+         12
+        ],
+        [
+         0,
+         48
+        ]
+       ]
+      }
+     }
+    },
+    {
+     "seed": 1,
+     "n_train": 8747,
+     "n_val": 584,
+     "val_experiments": [
+      "BR_LC_0.18_N",
+      "BR_NL_ND_N"
+     ],
+     "epochs_run": 23,
+     "best_epoch": 8,
+     "class_weights": [
+      2.6063766388557807,
+      0.6186872259159711
+     ],
+     "train_seconds": 4.678615093231201,
+     "test": {
+      "n": 8686,
+      "balanced_accuracy": 0.4861997240387053,
+      "accuracy": 0.765830071379231,
+      "recall": {
+       "no_leak": 0.015306122448979591,
+       "leak": 0.9570933256284311
+      },
+      "confusion": [
+       [
+        27,
+        1737
+       ],
+       [
+        297,
+        6625
+       ]
+      ],
+      "per_condition": {
+       "0.18_N": {
+        "n": 1442,
+        "accuracy": 0.7884882108183079,
+        "recall": {
+         "no_leak": 0.0,
+         "leak": 0.9801724137931035
+        }
+       },
+       "0.47_N": {
+        "n": 1472,
+        "accuracy": 0.7860054347826086,
+        "recall": {
+         "no_leak": 0.006535947712418301,
+         "leak": 0.9905660377358491
+        }
+       },
+       "ND_N": {
+        "n": 1490,
+        "accuracy": 0.7483221476510067,
+        "recall": {
+         "no_leak": 0.026785714285714284,
+         "leak": 0.9584055459272097
+        }
+       },
+       "ND_NN": {
+        "n": 1406,
+        "accuracy": 0.7702702702702703,
+        "recall": {
+         "no_leak": 0.014184397163120567,
+         "leak": 0.9599644128113879
+        }
+       },
+       "T_N": {
+        "n": 1452,
+        "accuracy": 0.7692837465564738,
+        "recall": {
+         "no_leak": 0.014285714285714285,
+         "leak": 0.9496587030716723
+        }
+       },
+       "T_NN": {
+        "n": 1424,
+        "accuracy": 0.7324438202247191,
+        "recall": {
+         "no_leak": 0.02877697841726619,
+         "leak": 0.9031413612565445
+        }
+       }
+      },
+      "recording_vote": {
+       "n": 60,
+       "balanced_accuracy": 0.4895833333333333,
+       "accuracy": 0.7833333333333333,
+       "confusion": [
+        [
+         0,
+         12
+        ],
+        [
+         1,
+         47
+        ]
+       ]
+      }
+     }
+    },
+    {
+     "seed": 2,
+     "n_train": 8675,
+     "n_val": 656,
+     "val_experiments": [
+      "BR_GL_0.18_N",
+      "BR_NL_T_NN"
+     ],
+     "epochs_run": 24,
+     "best_epoch": 9,
+     "class_weights": [
+      2.6840965346534653,
+      0.6144638050715399
+     ],
+     "train_seconds": 3.983427047729492,
+     "test": {
+      "n": 8686,
+      "balanced_accuracy": 0.5153920327641796,
+      "accuracy": 0.7908128022104536,
+      "recall": {
+       "no_leak": 0.051587301587301584,
+       "leak": 0.9791967639410575
+      },
+      "confusion": [
+       [
+        91,
+        1673
+       ],
+       [
+        144,
+        6778
+       ]
+      ],
+      "per_condition": {
+       "0.18_N": {
+        "n": 1442,
+        "accuracy": 0.8016643550624133,
+        "recall": {
+         "no_leak": 0.0070921985815602835,
+         "leak": 0.9948275862068966
+        }
+       },
+       "0.47_N": {
+        "n": 1472,
+        "accuracy": 0.7914402173913043,
+        "recall": {
+         "no_leak": 0.006535947712418301,
+         "leak": 0.9974271012006861
+        }
+       },
+       "ND_N": {
+        "n": 1490,
+        "accuracy": 0.776510067114094,
+        "recall": {
+         "no_leak": 0.08928571428571429,
+         "leak": 0.9766031195840554
+        }
+       },
+       "ND_NN": {
+        "n": 1406,
+        "accuracy": 0.7908961593172119,
+        "recall": {
+         "no_leak": 0.01773049645390071,
+         "leak": 0.9848754448398577
+        }
+       },
+       "T_N": {
+        "n": 1452,
+        "accuracy": 0.7816804407713499,
+        "recall": {
+         "no_leak": 0.07142857142857142,
+         "leak": 0.9513651877133106
+        }
+       },
+       "T_NN": {
+        "n": 1424,
+        "accuracy": 0.8033707865168539,
+        "recall": {
+         "no_leak": 0.11510791366906475,
+         "leak": 0.9703315881326352
+        }
+       }
+      },
+      "recording_vote": {
+       "n": 60,
+       "balanced_accuracy": 0.5,
+       "accuracy": 0.8,
+       "confusion": [
+        [
+         0,
+         12
+        ],
+        [
+         0,
+         48
+        ]
+       ]
+      }
+     }
+    },
+    {
+     "seed": 3,
+     "n_train": 8569,
+     "n_val": 762,
+     "val_experiments": [
+      "BR_CC_ND_N",
+      "BR_NL_T_N"
+     ],
+     "epochs_run": 23,
+     "best_epoch": 8,
+     "class_weights": [
+      2.8601468624833113,
+      0.6059256116532316
+     ],
+     "train_seconds": 4.930763483047485,
+     "test": {
+      "n": 8686,
+      "balanced_accuracy": 0.5164233660333054,
+      "accuracy": 0.7759613170619387,
+      "recall": {
+       "no_leak": 0.07936507936507936,
+       "leak": 0.9534816527015314
+      },
+      "confusion": [
+       [
+        140,
+        1624
+       ],
+       [
+        322,
+        6600
+       ]
+      ],
+      "per_condition": {
+       "0.18_N": {
+        "n": 1442,
+        "accuracy": 0.8044382801664355,
+        "recall": {
+         "no_leak": 0.0,
+         "leak": 1.0
+        }
+       },
+       "0.47_N": {
+        "n": 1472,
+        "accuracy": 0.7676630434782609,
+        "recall": {
+         "no_leak": 0.0,
+         "leak": 0.9691252144082333
+        }
+       },
+       "ND_N": {
+        "n": 1490,
+        "accuracy": 0.7704697986577181,
+        "recall": {
+         "no_leak": 0.0744047619047619,
+         "leak": 0.9731369150779896
+        }
+       },
+       "ND_NN": {
+        "n": 1406,
+        "accuracy": 0.7972972972972973,
+        "recall": {
+         "no_leak": 0.08156028368794327,
+         "leak": 0.9768683274021353
+        }
+       },
+       "T_N": {
+        "n": 1452,
+        "accuracy": 0.7775482093663911,
+        "recall": {
+         "no_leak": 0.1392857142857143,
+         "leak": 0.9300341296928327
+        }
+       },
+       "T_NN": {
+        "n": 1424,
+        "accuracy": 0.7387640449438202,
+        "recall": {
+         "no_leak": 0.1906474820143885,
+         "leak": 0.8717277486910995
+        }
+       }
+      },
+      "recording_vote": {
+       "n": 60,
+       "balanced_accuracy": 0.4895833333333333,
+       "accuracy": 0.7833333333333333,
+       "confusion": [
+        [
+         0,
+         12
+        ],
+        [
+         1,
+         47
+        ]
+       ]
+      }
+     }
+    },
+    {
+     "seed": 4,
+     "n_train": 8557,
+     "n_val": 774,
+     "val_experiments": [
+      "BR_NL_T_N",
+      "BR_OL_T_N"
+     ],
+     "epochs_run": 19,
+     "best_epoch": 4,
+     "class_weights": [
+      2.8561415220293727,
+      0.6061056806913161
+     ],
+     "train_seconds": 3.3519303798675537,
+     "test": {
+      "n": 8686,
+      "balanced_accuracy": 0.5080982551934382,
+      "accuracy": 0.770435183053189,
+      "recall": {
+       "no_leak": 0.0663265306122449,
+       "leak": 0.9498699797746316
+      },
+      "confusion": [
+       [
+        117,
+        1647
+       ],
+       [
+        347,
+        6575
+       ]
+      ],
+      "per_condition": {
+       "0.18_N": {
+        "n": 1442,
+        "accuracy": 0.7995839112343966,
+        "recall": {
+         "no_leak": 0.0,
+         "leak": 0.9939655172413793
+        }
+       },
+       "0.47_N": {
+        "n": 1472,
+        "accuracy": 0.7710597826086957,
+        "recall": {
+         "no_leak": 0.0,
+         "leak": 0.9734133790737565
+        }
+       },
+       "ND_N": {
+        "n": 1490,
+        "accuracy": 0.7697986577181208,
+        "recall": {
+         "no_leak": 0.10714285714285714,
+         "leak": 0.962738301559792
+        }
+       },
+       "ND_NN": {
+        "n": 1406,
+        "accuracy": 0.7631578947368421,
+        "recall": {
+         "no_leak": 0.01773049645390071,
+         "leak": 0.9501779359430605
+        }
+       },
+       "T_N": {
+        "n": 1452,
+        "accuracy": 0.7610192837465565,
+        "recall": {
+         "no_leak": 0.075,
+         "leak": 0.9249146757679181
+        }
+       },
+       "T_NN": {
+        "n": 1424,
+        "accuracy": 0.7577247191011236,
+        "recall": {
+         "no_leak": 0.19784172661870503,
+         "leak": 0.893542757417103
+        }
+       }
+      },
+      "recording_vote": {
+       "n": 60,
+       "balanced_accuracy": 0.4895833333333333,
+       "accuracy": 0.7833333333333333,
+       "confusion": [
+        [
+         0,
+         12
+        ],
+        [
+         1,
+         47
+        ]
+       ]
+      }
+     }
+    }
+   ]
+  }
+ },
+ "ablation_no_lowcut": {
+  "feature_config": {
+   "fs": 4000,
+   "n_fft": 1024,
+   "hop": 1024,
+   "n_bands": 64,
+   "f_low": 0.0,
+   "f_high": 2000.0,
+   "eps": 1e-06,
+   "spec_version": 2
+  },
+  "LO_to_BR": {
+   "summary": {
+    "balanced_accuracy_mean": 0.5048507446255129,
+    "balanced_accuracy_std": 0.001848486931396109,
+    "balanced_accuracy_min": 0.501956310532646,
+    "balanced_accuracy_max": 0.5072020947495025,
+    "recording_vote_ba_mean": 0.5,
+    "n_seeds": 5
+   },
+   "runs": [
+    {
+     "seed": 0,
+     "n_train": 8128,
+     "n_val": 558,
+     "val_experiments": [
+      "LO_LC_ND_NN",
+      "LO_NL_T_NN"
+     ],
+     "epochs_run": 34,
+     "best_epoch": 19,
+     "class_weights": [
+      2.7348586810228803,
+      0.611863896416742
+     ],
+     "train_seconds": 5.815712213516235,
+     "test": {
+      "n": 9331,
+      "balanced_accuracy": 0.5037766591346325,
+      "accuracy": 0.789518808273497,
+      "recall": {
+       "no_leak": 0.008097165991902834,
+       "leak": 0.9994561522773623
+      },
+      "confusion": [
+       [
+        16,
+        1960
+       ],
+       [
+        4,
+        7351
+       ]
+      ],
+      "per_condition": {
+       "0.18_N": {
+        "n": 1448,
+        "accuracy": 0.8121546961325967,
+        "recall": {
+         "no_leak": 0.0,
+         "leak": 1.0
+        }
+       },
+       "0.47_N": {
+        "n": 1426,
+        "accuracy": 0.8008415147265077,
+        "recall": {
+         "no_leak": 0.0,
+         "leak": 1.0
+        }
+       },
+       "ND_N": {
+        "n": 1459,
+        "accuracy": 0.8067169294037012,
+        "recall": {
+         "no_leak": 0.053691275167785234,
+         "leak": 1.0
+        }
+       },
+       "ND_NN": {
+        "n": 1468,
+        "accuracy": 0.8065395095367848,
+        "recall": {
+         "no_leak": 0.0,
+         "leak": 1.0
+        }
+       },
+       "T_N": {
+        "n": 1836,
+        "accuracy": 0.7380174291938998,
+        "recall": {
+         "no_leak": 0.0,
+         "leak": 0.9977908689248896
+        }
+       },
+       "T_NN": {
+        "n": 1694,
+        "accuracy": 0.7868949232585596,
+        "recall": {
+         "no_leak": 0.0,
+         "leak": 0.9992503748125937
+        }
+       }
+      },
+      "recording_vote": {
+       "n": 60,
+       "balanced_accuracy": 0.5,
+       "accuracy": 0.8,
+       "confusion": [
+        [
+         0,
+         12
+        ],
+        [
+         0,
+         48
+        ]
+       ]
+      }
+     }
+    },
+    {
+     "seed": 1,
+     "n_train": 8062,
+     "n_val": 624,
+     "val_experiments": [
+      "LO_LC_0.18_N",
+      "LO_NL_ND_N"
+     ],
+     "epochs_run": 40,
+     "best_epoch": 25,
+     "class_weights": [
+      2.8228291316526612,
+      0.607627374133253
+     ],
+     "train_seconds": 7.326112508773804,
+     "test": {
+      "n": 9331,
+      "balanced_accuracy": 0.5050607287449392,
+      "accuracy": 0.7903761654699389,
+      "recall": {
+       "no_leak": 0.010121457489878543,
+       "leak": 1.0
+      },
+      "confusion": [
+       [
+        20,
+        1956
+       ],
+       [
+        0,
+        7355
+       ]
+      ],
+      "per_condition": {
+       "0.18_N": {
+        "n": 1448,
+        "accuracy": 0.8121546961325967,
+        "recall": {
+         "no_leak": 0.0,
+         "leak": 1.0
+        }
+       },
+       "0.47_N": {
+        "n": 1426,
+        "accuracy": 0.8008415147265077,
+        "recall": {
+         "no_leak": 0.0,
+         "leak": 1.0
+        }
+       },
+       "ND_N": {
+        "n": 1459,
+        "accuracy": 0.8087731322823852,
+        "recall": {
+         "no_leak": 0.06375838926174497,
+         "leak": 1.0
+        }
+       },
+       "ND_NN": {
+        "n": 1468,
+        "accuracy": 0.8072207084468664,
+        "recall": {
+         "no_leak": 0.0035211267605633804,
+         "leak": 1.0
+        }
+       },
+       "T_N": {
+        "n": 1836,
+        "accuracy": 0.7396514161220044,
+        "recall": {
+         "no_leak": 0.0,
+         "leak": 1.0
+        }
+       },
+       "T_NN": {
+        "n": 1694,
+        "accuracy": 0.7874852420306966,
+        "recall": {
+         "no_leak": 0.0,
+         "leak": 1.0
+        }
+       }
+      },
+      "recording_vote": {
+       "n": 60,
+       "balanced_accuracy": 0.5,
+       "accuracy": 0.8,
+       "confusion": [
+        [
+         0,
+         12
+        ],
+        [
+         0,
+         48
+        ]
+       ]
+      }
+     }
+    },
+    {
+     "seed": 2,
+     "n_train": 8124,
+     "n_val": 562,
+     "val_experiments": [
+      "LO_GL_0.18_N",
+      "LO_NL_T_NN"
+     ],
+     "epochs_run": 29,
+     "best_epoch": 14,
+     "class_weights": [
+      2.733512786002692,
+      0.6119313046098223
+     ],
+     "train_seconds": 4.532188892364502,
+     "test": {
+      "n": 9331,
+      "balanced_accuracy": 0.5072020947495025,
+      "accuracy": 0.7911263530168257,
+      "recall": {
+       "no_leak": 0.014676113360323886,
+       "leak": 0.9997280761386812
+      },
+      "confusion": [
+       [
+        29,
+        1947
+       ],
+       [
+        2,
+        7353
+       ]
+      ],
+      "per_condition": {
+       "0.18_N": {
+        "n": 1448,
+        "accuracy": 0.81146408839779,
+        "recall": {
+         "no_leak": 0.0,
+         "leak": 0.9991496598639455
+        }
+       },
+       "0.47_N": {
+        "n": 1426,
+        "accuracy": 0.8008415147265077,
+        "recall": {
+         "no_leak": 0.0,
+         "leak": 1.0
+        }
+       },
+       "ND_N": {
+        "n": 1459,
+        "accuracy": 0.8149417409184373,
+        "recall": {
+         "no_leak": 0.09395973154362416,
+         "leak": 1.0
+        }
+       },
+       "ND_NN": {
+        "n": 1468,
+        "accuracy": 0.8072207084468664,
+        "recall": {
+         "no_leak": 0.0035211267605633804,
+         "leak": 1.0
+        }
+       },
+       "T_N": {
+        "n": 1836,
+        "accuracy": 0.7396514161220044,
+        "recall": {
+         "no_leak": 0.0,
+         "leak": 1.0
+        }
+       },
+       "T_NN": {
+        "n": 1694,
+        "accuracy": 0.7868949232585596,
+        "recall": {
+         "no_leak": 0.0,
+         "leak": 0.9992503748125937
+        }
+       }
+      },
+      "recording_vote": {
+       "n": 60,
+       "balanced_accuracy": 0.5,
+       "accuracy": 0.8,
+       "confusion": [
+        [
+         0,
+         12
+        ],
+        [
+         0,
+         48
+        ]
+       ]
+      }
+     }
+    },
+    {
+     "seed": 3,
+     "n_train": 8114,
+     "n_val": 572,
+     "val_experiments": [
+      "LO_CC_ND_N",
+      "LO_NL_T_N"
+     ],
+     "epochs_run": 73,
+     "best_epoch": 58,
+     "class_weights": [
+      2.7338274932614555,
+      0.6119155354449473
+     ],
+     "train_seconds": 11.467402219772339,
+     "test": {
+      "n": 9331,
+      "balanced_accuracy": 0.5062579299658444,
+      "accuracy": 0.7908048440681599,
+      "recall": {
+       "no_leak": 0.012651821862348178,
+       "leak": 0.9998640380693405
+      },
+      "confusion": [
+       [
+        25,
+        1951
+       ],
+       [
+        1,
+        7354
+       ]
+      ],
+      "per_condition": {
+       "0.18_N": {
+        "n": 1448,
+        "accuracy": 0.81146408839779,
+        "recall": {
+         "no_leak": 0.0,
+         "leak": 0.9991496598639455
+        }
+       },
+       "0.47_N": {
+        "n": 1426,
+        "accuracy": 0.8008415147265077,
+        "recall": {
+         "no_leak": 0.0,
+         "leak": 1.0
+        }
+       },
+       "ND_N": {
+        "n": 1459,
+        "accuracy": 0.8122001370801919,
+        "recall": {
+         "no_leak": 0.08053691275167785,
+         "leak": 1.0
+        }
+       },
+       "ND_NN": {
+        "n": 1468,
+        "accuracy": 0.8065395095367848,
+        "recall": {
+         "no_leak": 0.0,
+         "leak": 1.0
+        }
+       },
+       "T_N": {
+        "n": 1836,
+        "accuracy": 0.7401960784313726,
+        "recall": {
+         "no_leak": 0.0020920502092050207,
+         "leak": 1.0
+        }
+       },
+       "T_NN": {
+        "n": 1694,
+        "accuracy": 0.7874852420306966,
+        "recall": {
+         "no_leak": 0.0,
+         "leak": 1.0
+        }
+       }
+      },
+      "recording_vote": {
+       "n": 60,
+       "balanced_accuracy": 0.5,
+       "accuracy": 0.8,
+       "confusion": [
+        [
+         0,
+         12
+        ],
+        [
+         0,
+         48
+        ]
+       ]
+      }
+     }
+    },
+    {
+     "seed": 4,
+     "n_train": 8118,
+     "n_val": 568,
+     "val_experiments": [
+      "LO_NL_T_N",
+      "LO_OL_T_N"
+     ],
+     "epochs_run": 51,
+     "best_epoch": 36,
+     "class_weights": [
+      2.7351752021563343,
+      0.6118480554718119
+     ],
+     "train_seconds": 8.078896522521973,
+     "test": {
+      "n": 9331,
+      "balanced_accuracy": 0.501956310532646,
+      "accuracy": 0.7889829600257208,
+      "recall": {
+       "no_leak": 0.004048582995951417,
+       "leak": 0.9998640380693405
+      },
+      "confusion": [
+       [
+        8,
+        1968
+       ],
+       [
+        1,
+        7354
+       ]
+      ],
+      "per_condition": {
+       "0.18_N": {
+        "n": 1448,
+        "accuracy": 0.81146408839779,
+        "recall": {
+         "no_leak": 0.0,
+         "leak": 0.9991496598639455
+        }
+       },
+       "0.47_N": {
+        "n": 1426,
+        "accuracy": 0.8008415147265077,
+        "recall": {
+         "no_leak": 0.0,
+         "leak": 1.0
+        }
+       },
+       "ND_N": {
+        "n": 1459,
+        "accuracy": 0.8012337217272104,
+        "recall": {
+         "no_leak": 0.026845637583892617,
+         "leak": 1.0
+        }
+       },
+       "ND_NN": {
+        "n": 1468,
+        "accuracy": 0.8065395095367848,
+        "recall": {
+         "no_leak": 0.0,
+         "leak": 1.0
+        }
+       },
+       "T_N": {
+        "n": 1836,
+        "accuracy": 0.7396514161220044,
+        "recall": {
+         "no_leak": 0.0,
+         "leak": 1.0
+        }
+       },
+       "T_NN": {
+        "n": 1694,
+        "accuracy": 0.7874852420306966,
+        "recall": {
+         "no_leak": 0.0,
+         "leak": 1.0
+        }
+       }
+      },
+      "recording_vote": {
+       "n": 60,
+       "balanced_accuracy": 0.5,
+       "accuracy": 0.8,
+       "confusion": [
+        [
+         0,
+         12
+        ],
+        [
+         0,
+         48
+        ]
+       ]
+      }
+     }
+    }
+   ]
+  },
+  "BR_to_LO": {
+   "summary": {
+    "balanced_accuracy_mean": 0.5347398711001303,
+    "balanced_accuracy_std": 0.025487518374596438,
+    "balanced_accuracy_min": 0.49544192135103104,
+    "balanced_accuracy_max": 0.5723427914939452,
+    "recording_vote_ba_mean": 0.4854166666666666,
+    "n_seeds": 5
+   },
+   "runs": [
+    {
+     "seed": 0,
+     "n_train": 8681,
+     "n_val": 650,
+     "val_experiments": [
+      "BR_LC_ND_NN",
+      "BR_NL_T_NN"
+     ],
+     "epochs_run": 20,
+     "best_epoch": 5,
+     "class_weights": [
+      2.6859529702970297,
+      0.6143665958952583
+     ],
+     "train_seconds": 4.046091794967651,
+     "test": {
+      "n": 8686,
+      "balanced_accuracy": 0.5308901225904982,
+      "accuracy": 0.782523601197329,
+      "recall": {
+       "no_leak": 0.10714285714285714,
+       "leak": 0.9546373880381392
+      },
+      "confusion": [
+       [
+        189,
+        1575
+       ],
+       [
+        314,
+        6608
+       ]
+      ],
+      "per_condition": {
+       "0.18_N": {
+        "n": 1442,
+        "accuracy": 0.789875173370319,
+        "recall": {
+         "no_leak": 0.0,
+         "leak": 0.9818965517241379
+        }
+       },
+       "0.47_N": {
+        "n": 1472,
+        "accuracy": 0.7601902173913043,
+        "recall": {
+         "no_leak": 0.0,
+         "leak": 0.9596912521440824
+        }
+       },
+       "ND_N": {
+        "n": 1490,
+        "accuracy": 0.7771812080536913,
+        "recall": {
+         "no_leak": 0.23809523809523808,
+         "leak": 0.9341421143847487
+        }
+       },
+       "ND_NN": {
+        "n": 1406,
+        "accuracy": 0.7695590327169275,
+        "recall": {
+         "no_leak": 0.0035460992907801418,
+         "leak": 0.9617437722419929
+        }
+       },
+       "T_N": {
+        "n": 1452,
+        "accuracy": 0.7706611570247934,
+        "recall": {
+         "no_leak": 0.11071428571428571,
+         "leak": 0.9283276450511946
+        }
+       },
+       "T_NN": {
+        "n": 1424,
+        "accuracy": 0.8286516853932584,
+        "recall": {
+         "no_leak": 0.27697841726618705,
+         "leak": 0.962478184991274
+        }
+       }
+      },
+      "recording_vote": {
+       "n": 60,
+       "balanced_accuracy": 0.4895833333333333,
+       "accuracy": 0.7833333333333333,
+       "confusion": [
+        [
+         0,
+         12
+        ],
+        [
+         1,
+         47
+        ]
+       ]
+      }
+     }
+    },
+    {
+     "seed": 1,
+     "n_train": 8747,
+     "n_val": 584,
+     "val_experiments": [
+      "BR_LC_0.18_N",
+      "BR_NL_ND_N"
+     ],
+     "epochs_run": 29,
+     "best_epoch": 14,
+     "class_weights": [
+      2.6063766388557807,
+      0.6186872259159711
+     ],
+     "train_seconds": 5.401050329208374,
+     "test": {
+      "n": 8686,
+      "balanced_accuracy": 0.49544192135103104,
+      "accuracy": 0.7714713331798296,
+      "recall": {
+       "no_leak": 0.030612244897959183,
+       "leak": 0.9602715978041029
+      },
+      "confusion": [
+       [
+        54,
+        1710
+       ],
+       [
+        275,
+        6647
+       ]
+      ],
+      "per_condition": {
+       "0.18_N": {
+        "n": 1442,
+        "accuracy": 0.7995839112343966,
+        "recall": {
+         "no_leak": 0.0035460992907801418,
+         "leak": 0.993103448275862
+        }
+       },
+       "0.47_N": {
+        "n": 1472,
+        "accuracy": 0.7873641304347826,
+        "recall": {
+         "no_leak": 0.0,
+         "leak": 0.9939965694682675
+        }
+       },
+       "ND_N": {
+        "n": 1490,
+        "accuracy": 0.7416107382550335,
+        "recall": {
+         "no_leak": 0.050595238095238096,
+         "leak": 0.9428076256499134
+        }
+       },
+       "ND_NN": {
+        "n": 1406,
+        "accuracy": 0.767425320056899,
+        "recall": {
+         "no_leak": 0.0035460992907801418,
+         "leak": 0.9590747330960854
+        }
+       },
+       "T_N": {
+        "n": 1452,
+        "accuracy": 0.7603305785123967,
+        "recall": {
+         "no_leak": 0.025,
+         "leak": 0.9360068259385665
+        }
+       },
+       "T_NN": {
+        "n": 1424,
+        "accuracy": 0.7731741573033708,
+        "recall": {
+         "no_leak": 0.10071942446043165,
+         "leak": 0.9363001745200699
+        }
+       }
+      },
+      "recording_vote": {
+       "n": 60,
+       "balanced_accuracy": 0.5,
+       "accuracy": 0.8,
+       "confusion": [
+        [
+         0,
+         12
+        ],
+        [
+         0,
+         48
+        ]
+       ]
+      }
+     }
+    },
+    {
+     "seed": 2,
+     "n_train": 8675,
+     "n_val": 656,
+     "val_experiments": [
+      "BR_GL_0.18_N",
+      "BR_NL_T_NN"
+     ],
+     "epochs_run": 25,
+     "best_epoch": 10,
+     "class_weights": [
+      2.6840965346534653,
+      0.6144638050715399
+     ],
+     "train_seconds": 4.318846225738525,
+     "test": {
+      "n": 8686,
+      "balanced_accuracy": 0.5261200117145963,
+      "accuracy": 0.7880497352060788,
+      "recall": {
+       "no_leak": 0.08503401360544217,
+       "leak": 0.9672060098237504
+      },
+      "confusion": [
+       [
+        150,
+        1614
+       ],
+       [
+        227,
+        6695
+       ]
+      ],
+      "per_condition": {
+       "0.18_N": {
+        "n": 1442,
+        "accuracy": 0.8023578363384188,
+        "recall": {
+         "no_leak": 0.0,
+         "leak": 0.9974137931034482
+        }
+       },
+       "0.47_N": {
+        "n": 1472,
+        "accuracy": 0.782608695652174,
+        "recall": {
+         "no_leak": 0.0,
+         "leak": 0.9879931389365352
+        }
+       },
+       "ND_N": {
+        "n": 1490,
+        "accuracy": 0.7577181208053692,
+        "recall": {
+         "no_leak": 0.1488095238095238,
+         "leak": 0.9350086655112652
+        }
+       },
+       "ND_NN": {
+        "n": 1406,
+        "accuracy": 0.7894736842105263,
+        "recall": {
+         "no_leak": 0.010638297872340425,
+         "leak": 0.9848754448398577
+        }
+       },
+       "T_N": {
+        "n": 1452,
+        "accuracy": 0.7658402203856749,
+        "recall": {
+         "no_leak": 0.09285714285714286,
+         "leak": 0.9266211604095563
+        }
+       },
+       "T_NN": {
+        "n": 1424,
+        "accuracy": 0.8321629213483146,
+        "recall": {
+         "no_leak": 0.25539568345323743,
+         "leak": 0.9720767888307156
+        }
+       }
+      },
+      "recording_vote": {
+       "n": 60,
+       "balanced_accuracy": 0.4895833333333333,
+       "accuracy": 0.7833333333333333,
+       "confusion": [
+        [
+         0,
+         12
+        ],
+        [
+         1,
+         47
+        ]
+       ]
+      }
+     }
+    },
+    {
+     "seed": 3,
+     "n_train": 8569,
+     "n_val": 762,
+     "val_experiments": [
+      "BR_CC_ND_N",
+      "BR_NL_T_N"
+     ],
+     "epochs_run": 35,
+     "best_epoch": 20,
+     "class_weights": [
+      2.8601468624833113,
+      0.6059256116532316
+     ],
+     "train_seconds": 6.298961639404297,
+     "test": {
+      "n": 8686,
+      "balanced_accuracy": 0.5723427914939452,
+      "accuracy": 0.7859774349527976,
+      "recall": {
+       "no_leak": 0.21258503401360543,
+       "leak": 0.9321005489742848
+      },
+      "confusion": [
+       [
+        375,
+        1389
+       ],
+       [
+        470,
+        6452
+       ]
+      ],
+      "per_condition": {
+       "0.18_N": {
+        "n": 1442,
+        "accuracy": 0.8467406380027739,
+        "recall": {
+         "no_leak": 0.21631205673758866,
+         "leak": 1.0
+        }
+       },
+       "0.47_N": {
+        "n": 1472,
+        "accuracy": 0.7622282608695652,
+        "recall": {
+         "no_leak": 0.042483660130718956,
+         "leak": 0.951114922813036
+        }
+       },
+       "ND_N": {
+        "n": 1490,
+        "accuracy": 0.7919463087248322,
+        "recall": {
+         "no_leak": 0.32142857142857145,
+         "leak": 0.92894280762565
+        }
+       },
+       "ND_NN": {
+        "n": 1406,
+        "accuracy": 0.7660028449502134,
+        "recall": {
+         "no_leak": 0.05673758865248227,
+         "leak": 0.943950177935943
+        }
+       },
+       "T_N": {
+        "n": 1452,
+        "accuracy": 0.7775482093663911,
+        "recall": {
+         "no_leak": 0.2642857142857143,
+         "leak": 0.9001706484641638
+        }
+       },
+       "T_NN": {
+        "n": 1424,
+        "accuracy": 0.7710674157303371,
+        "recall": {
+         "no_leak": 0.37050359712230213,
+         "leak": 0.868237347294939
+        }
+       }
+      },
+      "recording_vote": {
+       "n": 60,
+       "balanced_accuracy": 0.4791666666666667,
+       "accuracy": 0.7666666666666667,
+       "confusion": [
+        [
+         0,
+         12
+        ],
+        [
+         2,
+         46
+        ]
+       ]
+      }
+     }
+    },
+    {
+     "seed": 4,
+     "n_train": 8557,
+     "n_val": 774,
+     "val_experiments": [
+      "BR_NL_T_N",
+      "BR_OL_T_N"
+     ],
+     "epochs_run": 17,
+     "best_epoch": 2,
+     "class_weights": [
+      2.8561415220293727,
+      0.6061056806913161
+     ],
+     "train_seconds": 3.0514490604400635,
+     "test": {
+      "n": 8686,
+      "balanced_accuracy": 0.5489045083505809,
+      "accuracy": 0.7819479622380843,
+      "recall": {
+       "no_leak": 0.1564625850340136,
+       "leak": 0.9413464316671483
+      },
+      "confusion": [
+       [
+        276,
+        1488
+       ],
+       [
+        406,
+        6516
+       ]
+      ],
+      "per_condition": {
+       "0.18_N": {
+        "n": 1442,
+        "accuracy": 0.8044382801664355,
+        "recall": {
+         "no_leak": 0.0035460992907801418,
+         "leak": 0.9991379310344828
+        }
+       },
+       "0.47_N": {
+        "n": 1472,
+        "accuracy": 0.7703804347826086,
+        "recall": {
+         "no_leak": 0.0,
+         "leak": 0.9725557461406518
+        }
+       },
+       "ND_N": {
+        "n": 1490,
+        "accuracy": 0.7832214765100671,
+        "recall": {
+         "no_leak": 0.30357142857142855,
+         "leak": 0.9228769497400346
+        }
+       },
+       "ND_NN": {
+        "n": 1406,
+        "accuracy": 0.7425320056899004,
+        "recall": {
+         "no_leak": 0.02127659574468085,
+         "leak": 0.9234875444839857
+        }
+       },
+       "T_N": {
+        "n": 1452,
+        "accuracy": 0.7947658402203857,
+        "recall": {
+         "no_leak": 0.24285714285714285,
+         "leak": 0.9266211604095563
+        }
+       },
+       "T_NN": {
+        "n": 1424,
+        "accuracy": 0.7956460674157303,
+        "recall": {
+         "no_leak": 0.35611510791366907,
+         "leak": 0.9022687609075044
+        }
+       }
+      },
+      "recording_vote": {
+       "n": 60,
+       "balanced_accuracy": 0.46875,
+       "accuracy": 0.75,
+       "confusion": [
+        [
+         0,
+         12
+        ],
+        [
+         3,
+         45
+        ]
+       ]
+      }
+     }
+    }
+   ]
+  }
+ }
+}

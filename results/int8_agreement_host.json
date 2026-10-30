@@ -1,0 +1,27 @@
+{
+ "n_windows_all": 18017,
+ "n_windows_test": 1452,
+ "tflite_f32_vs_keras_max_abs_logit_diff": 4.76837158203125e-06,
+ "tflite_f32_vs_keras_pred_agree": 1.0,
+ "emu_vs_tflite_ref_int8_exact_elements": 1.0,
+ "emu_vs_tflite_ref_int8_exact_windows": 1.0,
+ "tflite_default_vs_ref_int8_exact_elements": 0.9880113226397291,
+ "tflite_default_vs_ref_max_abs_diff": 1,
+ "int8_vs_f32_pred_agree_all": 1.0,
+ "int8_dequant_vs_f32_max_abs_logit_diff": 7.281744480133057,
+ "test_accuracy": {
+  "keras_f32": {
+   "accuracy": 0.953168044077135,
+   "balanced_accuracy": 0.9682715748415407
+  },
+  "tflite_f32": {
+   "accuracy": 0.953168044077135,
+   "balanced_accuracy": 0.9682715748415407
+  },
+  "tflite_int8": {
+   "accuracy": 0.953168044077135,
+   "balanced_accuracy": 0.9682715748415407
+  }
+ },
+ "note": "int8 inputs are quantized in numpy with the firmware's formula (float32 divide, round half away from zero) and fed to the int8-I/O model. 'ref' = BUILTIN_REF kernels; 'default' = interpreter's default resolver (may use XNNPACK)."
+}

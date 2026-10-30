@@ -1,0 +1,7 @@
+info {'fw': '1.0.0', 'built': 'Oct 30 2026 18:59:41', 'model_id': 'a860cafacae7', 'feature_spec_version': 2, 'n_fft': 1024, 'n_bands': 64, 'n_classes': 2, 'core_clock_hz': 64000000, 'ble_on': 1, 'ble_addr': 'a0:13:0e:90:06:83', 'opt': 1, 'nvmc_icachecnf': 1}
+selftest {'selftest': 'PASS', 'n': 16, 'max_feat_err': 0.0002668, 'tol_feat': 0.001, 'max_logit_err_ref_in': 2.861e-06, 'tol_logit': 0.0001, 'max_logit_err_dev_in': 0.000226, 'pred_f32_agree': 16, 'i8_exact': 32, 'i8_total': 32, 'qin_mismatch': 1, 'qin_total': 1024, 'qin_max_diff': 1, 'pred_i8_dev_agree': 16}
+{'ble_on': 0}
+  0/18017
+  1000/18017
+  2000/18017
+  3000/18017

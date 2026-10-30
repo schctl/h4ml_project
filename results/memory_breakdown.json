@@ -1,0 +1,72 @@
+{
+ "arduino_cli_report": {
+  "full_firmware": {
+   "flash": 421960,
+   "ram": 154336
+  },
+  "empty": {
+   "flash": 85288,
+   "ram": 44560
+  },
+  "ble_only": {
+   "flash": 325296,
+   "ram": 69680
+  }
+ },
+ "groups": {
+  "model weights f32 (MD_W*, MD_B*)": {
+   "flash": 25224,
+   "ram": 0,
+   "symbols": 6
+  },
+  "model weights int8 (MD_Q*)": {
+   "flash": 7482,
+   "ram": 0,
+   "symbols": 15
+  },
+  "feature tables (FD_*)": {
+   "flash": 4738,
+   "ram": 0,
+   "symbols": 4
+  },
+  "self-test vectors (TV_*)": {
+   "flash": 38048,
+   "ram": 0,
+   "symbols": 5
+  },
+  "CMSIS-DSP FFT tables": {
+   "flash": 9104,
+   "ram": 0,
+   "symbols": 4
+  },
+  "app buffers (bench, fft, queues)": {
+   "flash": 0,
+   "ram": 83560,
+   "symbols": 17
+  }
+ },
+ "elf_sections": {
+  ".text": 418056,
+  ".ARM.exidx": 8,
+  ".data": 3904,
+  ".nvictable": 256,
+  ".crash_data_ram": 256,
+  ".bss": 150432,
+  ".heap": 106272,
+  ".stack": 1024,
+  ".ARM.attributes": 46,
+  ".comment": 202,
+  ".debug_info": 1151480,
+  ".debug_abbrev": 108137,
+  ".debug_loc": 128020,
+  ".debug_aranges": 9168,
+  ".debug_ranges": 16632,
+  ".debug_macro": 275908,
+  ".debug_line": 419075,
+  ".debug_str": 839338,
+  ".debug_frame": 32616,
+  ".stab": 60,
+  ".stabstr": 118
+ },
+ "note": "Group sizes from nm -S (static symbols only); arduino-cli 'Global variables' = .data+.bss static RAM. Heap/stack at runtime are in results/nano_bench.json (mem_after)."
+}

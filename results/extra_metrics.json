@@ -1,0 +1,203 @@
+{
+ "deployed_test": {
+  "n": 1452,
+  "positive_class": "leak",
+  "host_tflite_f32": {
+   "tp": 1106,
+   "fp": 2,
+   "fn": 66,
+   "tn": 278,
+   "accuracy": 0.953168044077135,
+   "precision": 0.9981949458483754,
+   "recall": 0.9436860068259386,
+   "specificity": 0.9928571428571429,
+   "f1": 0.9701754385964914,
+   "balanced_accuracy": 0.9682715748415407,
+   "roc_auc": 0.9936128717698682
+  },
+  "host_tflite_int8": {
+   "tp": 1106,
+   "fp": 2,
+   "fn": 66,
+   "tn": 278,
+   "accuracy": 0.953168044077135,
+   "precision": 0.9981949458483754,
+   "recall": 0.9436860068259386,
+   "specificity": 0.9928571428571429,
+   "f1": 0.9701754385964914,
+   "balanced_accuracy": 0.9682715748415407,
+   "roc_auc": 0.9938216114090688
+  },
+  "nano_f32": {
+   "tp": 1106,
+   "fp": 2,
+   "fn": 66,
+   "tn": 278,
+   "accuracy": 0.953168044077135,
+   "precision": 0.9981949458483754,
+   "recall": 0.9436860068259386,
+   "specificity": 0.9928571428571429,
+   "f1": 0.9701754385964914,
+   "balanced_accuracy": 0.9682715748415407,
+   "roc_auc": 0.9936128717698682,
+   "n": 1452
+  },
+  "nano_int8": {
+   "tp": 1106,
+   "fp": 2,
+   "fn": 66,
+   "tn": 278,
+   "accuracy": 0.953168044077135,
+   "precision": 0.9981949458483754,
+   "recall": 0.9436860068259386,
+   "specificity": 0.9928571428571429,
+   "f1": 0.9701754385964914,
+   "balanced_accuracy": 0.9682715748415407,
+   "roc_auc": 0.9938216114090688,
+   "n": 1452
+  },
+  "note": "argmax decision = threshold 0 on the logit margin (leak - no_leak). int8 AUC uses the integer margin, which has ties; it is a ranking metric only."
+ },
+ "threshold_sweep_source": "results/threshold_sweep.csv (Nano float32 logit margin)",
+ "e1b_metrics": {
+  "LO": {
+   "precision": {
+    "mean": 0.9883575500679317,
+    "std": 0.002402954192127225
+   },
+   "recall": {
+    "mean": 0.9860444958104594,
+    "std": 0.0026616436759148267
+   },
+   "specificity": {
+    "mean": 0.9544217687074829,
+    "std": 0.009401547592574996
+   },
+   "f1": {
+    "mean": 0.9871993585783775,
+    "std": 0.0024749566369161795
+   }
+  },
+  "BR": {
+   "precision": {
+    "mean": 0.9472113206719941,
+    "std": 0.007622987390722759
+   },
+   "recall": {
+    "mean": 0.9306050305914344,
+    "std": 0.01501960315739466
+   },
+   "specificity": {
+    "mean": 0.8067813765182187,
+    "std": 0.029715399483775332
+   },
+   "f1": {
+    "mean": 0.9387667655950149,
+    "std": 0.008981973505278606
+   }
+  }
+ },
+ "complexity": {
+  "layers": [
+   {
+    "n_in": 64,
+    "n_out": 64,
+    "weights": 4096,
+    "biases": 64,
+    "macs": 4096
+   },
+   {
+    "n_in": 64,
+    "n_out": 32,
+    "weights": 2048,
+    "biases": 32,
+    "macs": 2048
+   },
+   {
+    "n_in": 32,
+    "n_out": 2,
+    "weights": 64,
+    "biases": 2,
+    "macs": 64
+   }
+  ],
+  "params": 6306,
+  "macs_per_inference": 6208,
+  "storage_bytes": {
+   "fp32_all": 25224,
+   "int8_weights_int32_bias": 6600,
+   "fp32_weights": 24832,
+   "int8_weights": 6208
+  },
+  "nano_effective_throughput": {
+   "ble0_opt0_mlp_f32": {
+    "median_us": 2399.5,
+    "macs_per_s": 2587205.6678474685,
+    "cycles_per_mac": 24.737113402061855
+   },
+   "ble0_opt0_mlp_i8": {
+    "median_us": 2164.0,
+    "macs_per_s": 2868761.5526802223,
+    "cycles_per_mac": 22.309278350515463
+   },
+   "ble0_opt1_mlp_f32": {
+    "median_us": 913.0,
+    "macs_per_s": 6799561.883899233,
+    "cycles_per_mac": 9.412371134020619
+   },
+   "ble0_opt1_mlp_i8": {
+    "median_us": 725.0,
+    "macs_per_s": 8562758.620689657,
+    "cycles_per_mac": 7.474226804123711
+   }
+  },
+  "note": "MACs count multiply-accumulates in the three dense layers (bias adds and ReLU excluded, as in the course's convention). cycles_per_mac assumes the 64 MHz core clock reported by the firmware and includes loop overhead and requantization."
+ },
+ "relu_sparsity": {
+  "layers": [
+   {
+    "layer": 0,
+    "units": 64,
+    "frac_zero": 0.48233040633608815
+   },
+   {
+    "layer": 1,
+    "units": 32,
+    "frac_zero": 0.44079287190082644
+   }
+  ],
+  "mean_skippable_macs": 1016.0234159779615,
+  "skippable_frac_of_total": 0.16366356571809945,
+  "note": "A zero activation makes all MACs that consume it skippable in the next layer (zero-skipping). Input features are standardized and dense, so layer 1 MACs cannot be skipped this way."
+ },
+ "pruning": {
+  "results": [
+   {
+    "pruned_frac": 0.0,
+    "nonzero_weights": 6208,
+    "test_balanced_accuracy": 0.9682715748415407
+   },
+   {
+    "pruned_frac": 0.25,
+    "nonzero_weights": 4656,
+    "test_balanced_accuracy": 0.9674183325207216
+   },
+   {
+    "pruned_frac": 0.5,
+    "nonzero_weights": 3104,
+    "test_balanced_accuracy": 0.9732325694783033
+   },
+   {
+    "pruned_frac": 0.75,
+    "nonzero_weights": 1552,
+    "test_balanced_accuracy": 0.9789371038517796
+   },
+   {
+    "pruned_frac": 0.9,
+    "nonzero_weights": 621,
+    "test_balanced_accuracy": 0.9133898098488542
+   }
+  ],
+  "note": "Global magnitude pruning of dense kernels, biases kept, no fine-tuning; deployed float model, held-out test windows (host Keras)."
+ }
+}

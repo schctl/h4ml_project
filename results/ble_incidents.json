@@ -1,0 +1,11 @@
+{
+ "note": "Log of BLE link-test runs in this session that did not produce a result file, observed by the operator (Claude Code) on 2026-10-30. 'WDT reset' = Nano answered afterwards with boot_resetreas=2 (nRF52 RESETREAS.DOG). Runs before the watchdog existed needed a manual double-tap reset. These are observations, not measurements; no metric is derived from them.",
+ "runs": [
+  {"time": "19:15", "firmware": "stock ArduinoBLE 1.4.0, no notify guard, no watchdog", "host_interval": "default (Nano requested 7.5-15 ms)", "load": "burst 300, unthrottled", "outcome": "link dropped during the test; Nano hung (no serial reply, 1200-baud touch failed, no red LED). Manual double-tap reset."},
+  {"time": "19:24", "firmware": "same as above", "host_interval": "default", "load": "connect + MTU exchange, before first write", "outcome": "Nano hung. Manual double-tap reset."},
+  {"time": "19:39", "firmware": "patched ArduinoBLE (4 KB HCI RX ring) + notify guard + 60 s watchdog", "host_interval": "default (~45 ms measured)", "load": "burst 60, <=4 windows in flight", "outcome": "hung at start of burst; WDT reset (resetreas=2)."},
+  {"time": "19:44", "firmware": "patched", "host_interval": "debugfs conn_min/max_interval = 6/12 (7.5-15 ms)", "load": "burst 60, <=4 in flight", "outcome": "hung at start; WDT reset (resetreas=2)."},
+  {"time": "19:49", "firmware": "patched", "host_interval": "debugfs restored to 24/40 (30-50 ms)", "load": "burst 60, <=4 in flight", "outcome": "hung at start; WDT reset (resetreas=2)."}
+ ],
+ "completed_runs": ["results/ble_link_stock.json (stock lib, burst 60 + 30 s real-time)", "results/ble_link_patched_rt.json (patched lib, 1 window + 30 s real-time)"]
+}

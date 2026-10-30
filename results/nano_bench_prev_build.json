@@ -1,0 +1,368 @@
+{
+ "info": {
+  "fw": "1.0.0",
+  "built": "Oct 30 2026 19:29:55",
+  "model_id": "a860cafacae7",
+  "feature_spec_version": 2,
+  "n_fft": 1024,
+  "n_bands": 64,
+  "n_classes": 2,
+  "core_clock_hz": 64000000,
+  "ble_on": 1,
+  "ble_addr": "a0:13:0e:90:06:83",
+  "opt": 1,
+  "nvmc_icachecnf": 1,
+  "boot_resetreas": 2,
+  "boot_crumb": 0,
+  "wdt_running": 1
+ },
+ "mem_boot": {
+  "stack_size": 32768,
+  "stack_used_hwm": 936,
+  "heap_arena": 29720,
+  "heap_in_use": 23352,
+  "heap_free_in_arena": 6368
+ },
+ "settings": [
+  {
+   "ble_on": 0,
+   "opt": 0,
+   "selftest": {
+    "selftest": "PASS",
+    "n": 16,
+    "max_feat_err": 0.0002668,
+    "tol_feat": 0.001,
+    "max_logit_err_ref_in": 1.907e-06,
+    "tol_logit": 0.0001,
+    "max_logit_err_dev_in": 0.0002241,
+    "pred_f32_agree": 16,
+    "i8_exact": 32,
+    "i8_total": 32,
+    "qin_mismatch": 1,
+    "qin_total": 1024,
+    "qin_max_diff": 1,
+    "pred_i8_dev_agree": 16
+   },
+   "profile_us": {
+    "profile_windows": 128,
+    "prep_us": 517.7,
+    "fft_us": 1126.7,
+    "maglog_us": 10412.2,
+    "band_std_us": 163.3
+   },
+   "n_results": 200,
+   "pred_f32_agree_host": 1.0,
+   "i8_exact_windows_vs_host": 1.0,
+   "counters": {
+    "rx_frames": 201,
+    "crc_err": 0,
+    "seq_err": 0,
+    "len_err": 0,
+    "windows_done": 200,
+    "notify_fail": 0,
+    "ble_queue_overflow": 0,
+    "ble_max_write": 0,
+    "n_arrivals": 0
+   },
+   "latency_us": {
+    "feat_us": {
+     "n": 200,
+     "mean": 12151.76,
+     "std": 32.02924288833566,
+     "min": 12007.0,
+     "median": 12151.5,
+     "p95": 12199.05,
+     "p99": 12216.01,
+     "max": 12224.0
+    },
+    "fft_us": {
+     "n": 200,
+     "mean": 1127.1,
+     "std": 10.28153685010174,
+     "min": 1119.0,
+     "median": 1122.0,
+     "p95": 1149.0,
+     "p99": 1151.0,
+     "max": 1151.0
+    },
+    "mlp_f32_us": {
+     "n": 200,
+     "mean": 1183.595,
+     "std": 11.337591234473045,
+     "min": 1172.0,
+     "median": 1175.0,
+     "p95": 1202.0,
+     "p99": 1202.0,
+     "max": 1203.0
+    },
+    "mlp_i8_us": {
+     "n": 200,
+     "mean": 2414.25,
+     "std": 12.522679425745913,
+     "min": 2391.0,
+     "median": 2415.0,
+     "p95": 2438.05,
+     "p99": 2442.02,
+     "max": 2445.0
+    }
+   }
+  },
+  {
+   "ble_on": 0,
+   "opt": 1,
+   "selftest": {
+    "selftest": "PASS",
+    "n": 16,
+    "max_feat_err": 0.0002668,
+    "tol_feat": 0.001,
+    "max_logit_err_ref_in": 2.861e-06,
+    "tol_logit": 0.0001,
+    "max_logit_err_dev_in": 0.000226,
+    "pred_f32_agree": 16,
+    "i8_exact": 32,
+    "i8_total": 32,
+    "qin_mismatch": 1,
+    "qin_total": 1024,
+    "qin_max_diff": 1,
+    "pred_i8_dev_agree": 16
+   },
+   "profile_us": {
+    "profile_windows": 128,
+    "prep_us": 517.9,
+    "fft_us": 1126.3,
+    "maglog_us": 1104.6,
+    "band_std_us": 163.2
+   },
+   "n_results": 200,
+   "pred_f32_agree_host": 1.0,
+   "i8_exact_windows_vs_host": 1.0,
+   "counters": {
+    "rx_frames": 201,
+    "crc_err": 0,
+    "seq_err": 0,
+    "len_err": 0,
+    "windows_done": 200,
+    "notify_fail": 0,
+    "ble_queue_overflow": 0,
+    "ble_max_write": 0,
+    "n_arrivals": 0
+   },
+   "latency_us": {
+    "feat_us": {
+     "n": 200,
+     "mean": 2838.685,
+     "std": 12.036019898620971,
+     "min": 2802.0,
+     "median": 2844.0,
+     "p95": 2849.0,
+     "p99": 2853.01,
+     "max": 2858.0
+    },
+    "fft_us": {
+     "n": 200,
+     "mean": 1127.775,
+     "std": 13.200544496345595,
+     "min": 1118.0,
+     "median": 1121.0,
+     "p95": 1164.05,
+     "p99": 1165.0,
+     "max": 1165.0
+    },
+    "mlp_f32_us": {
+     "n": 200,
+     "mean": 911.735,
+     "std": 9.097514770529367,
+     "min": 870.0,
+     "median": 915.0,
+     "p95": 916.0,
+     "p99": 917.0,
+     "max": 920.0
+    },
+    "mlp_i8_us": {
+     "n": 200,
+     "mean": 759.91,
+     "std": 18.1055764890268,
+     "min": 724.0,
+     "median": 771.0,
+     "p95": 773.0,
+     "p99": 774.02,
+     "max": 776.0
+    }
+   }
+  },
+  {
+   "ble_on": 1,
+   "opt": 0,
+   "selftest": {
+    "selftest": "PASS",
+    "n": 16,
+    "max_feat_err": 0.0002668,
+    "tol_feat": 0.001,
+    "max_logit_err_ref_in": 1.907e-06,
+    "tol_logit": 0.0001,
+    "max_logit_err_dev_in": 0.0002241,
+    "pred_f32_agree": 16,
+    "i8_exact": 32,
+    "i8_total": 32,
+    "qin_mismatch": 1,
+    "qin_total": 1024,
+    "qin_max_diff": 1,
+    "pred_i8_dev_agree": 16
+   },
+   "profile_us": {
+    "profile_windows": 128,
+    "prep_us": 953.9,
+    "fft_us": 2156.9,
+    "maglog_us": 19503.4,
+    "band_std_us": 313.1
+   },
+   "n_results": 198,
+   "pred_f32_agree_host": 1.0,
+   "i8_exact_windows_vs_host": 0.5606060606060606,
+   "counters": {
+    "rx_frames": 199,
+    "crc_err": 1,
+    "seq_err": 0,
+    "len_err": 0,
+    "windows_done": 198,
+    "notify_fail": 0,
+    "ble_queue_overflow": 0,
+    "ble_max_write": 0,
+    "n_arrivals": 0
+   },
+   "latency_us": {
+    "feat_us": {
+     "n": 198,
+     "mean": 22125.696969696968,
+     "std": 3154.23889859103,
+     "min": 13232.0,
+     "median": 21276.5,
+     "p95": 26291.0,
+     "p99": 26433.0,
+     "max": 26474.0
+    },
+    "fft_us": {
+     "n": 198,
+     "mean": 2004.1616161616162,
+     "std": 1822.6473680955596,
+     "min": 1118.0,
+     "median": 1122.0,
+     "p95": 6132.0,
+     "p99": 6156.06,
+     "max": 6159.0
+    },
+    "mlp_f32_us": {
+     "n": 198,
+     "mean": 3102.3232323232323,
+     "std": 2273.827829131081,
+     "min": 1171.0,
+     "median": 1202.0,
+     "p95": 6210.0,
+     "p99": 6231.03,
+     "max": 6260.0
+    },
+    "mlp_i8_us": {
+     "n": 198,
+     "mean": 3464.1464646464647,
+     "std": 1858.3871044707716,
+     "min": 2391.0,
+     "median": 2420.5,
+     "p95": 7428.15,
+     "p99": 7449.06,
+     "max": 7522.0
+    }
+   }
+  },
+  {
+   "ble_on": 1,
+   "opt": 1,
+   "selftest": {
+    "selftest": "PASS",
+    "n": 16,
+    "max_feat_err": 0.0002668,
+    "tol_feat": 0.001,
+    "max_logit_err_ref_in": 2.861e-06,
+    "tol_logit": 0.0001,
+    "max_logit_err_dev_in": 0.000226,
+    "pred_f32_agree": 16,
+    "i8_exact": 32,
+    "i8_total": 32,
+    "qin_mismatch": 1,
+    "qin_total": 1024,
+    "qin_max_diff": 1,
+    "pred_i8_dev_agree": 16
+   },
+   "profile_us": {
+    "profile_windows": 128,
+    "prep_us": 856.2,
+    "fft_us": 2088.9,
+    "maglog_us": 2076.9,
+    "band_std_us": 338.9
+   },
+   "n_results": 188,
+   "pred_f32_agree_host": 1.0,
+   "i8_exact_windows_vs_host": 0.11170212765957446,
+   "counters": {
+    "rx_frames": 189,
+    "crc_err": 6,
+    "seq_err": 0,
+    "len_err": 0,
+    "windows_done": 188,
+    "notify_fail": 0,
+    "ble_queue_overflow": 0,
+    "ble_max_write": 0,
+    "n_arrivals": 0
+   },
+   "latency_us": {
+    "feat_us": {
+     "n": 188,
+     "mean": 5554.904255319149,
+     "std": 2285.0521413537363,
+     "min": 2802.0,
+     "median": 6936.5,
+     "p95": 7856.0,
+     "p99": 7882.69,
+     "max": 7924.0
+    },
+    "fft_us": {
+     "n": 188,
+     "mean": 1890.8936170212767,
+     "std": 1757.0273915451942,
+     "min": 1118.0,
+     "median": 1122.0,
+     "p95": 6130.65,
+     "p99": 6157.0,
+     "max": 6158.0
+    },
+    "mlp_f32_us": {
+     "n": 188,
+     "mean": 2166.9893617021276,
+     "std": 2014.6635033676766,
+     "min": 870.0,
+     "median": 916.0,
+     "p95": 5923.0,
+     "p99": 5924.26,
+     "max": 5966.0
+    },
+    "mlp_i8_us": {
+     "n": 188,
+     "mean": 878.5265957446809,
+     "std": 728.4167721665375,
+     "min": 724.0,
+     "median": 770.0,
+     "p95": 788.6500000000001,
+     "p99": 5763.21,
+     "max": 5778.0
+    }
+   }
+  }
+ ],
+ "mem_after": {
+  "stack_size": 32768,
+  "stack_used_hwm": 1200,
+  "heap_arena": 29720,
+  "heap_in_use": 23576,
+  "heap_free_in_arena": 6144
+ },
+ "note": "Measured on the earlier firmware build (before mlp.cpp was split into plain/optimized dense-layer functions). dsp.cpp (feature extraction) is unchanged since; BLE-on settings could not be re-measured on the final build because the board reset during those runs."
+}

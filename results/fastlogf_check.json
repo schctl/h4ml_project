@@ -1,0 +1,9 @@
+{
+ "n": 3000000,
+ "max_ulp_vs_exact": 0.8707546554505825,
+ "mean_ulp_vs_exact": 0.255255981229417,
+ "frac_equal_numpy_float32": 0.8740186666666667,
+ "max_abs_diff_numpy_float32": 9.5367431640625e-07,
+ "numpy_float32_max_ulp_vs_exact": 3.614881483837962,
+ "note": "Compiled with host gcc -O2 -ffp-contract=off (no FMA), matching the M4F's separate VMUL/VADD."
+}

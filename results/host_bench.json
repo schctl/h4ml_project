@@ -1,0 +1,66 @@
+{
+ "env": {
+  "cpu": "AMD Ryzen 5 5600H with Radeon Graphics",
+  "logical_cpus": 12,
+  "governor": "performance",
+  "os": "Linux-7.2.11-arch1-1-x86_64-with-glibc2.44",
+  "python": "3.11.15",
+  "numpy": "2.0.2",
+  "tensorflow": "2.18.1"
+ },
+ "n": 2000,
+ "threads": 1,
+ "unit": "us per window (batch 1)",
+ "features_numpy": {
+  "n": 2000,
+  "mean": 256.8920515,
+  "std": 15.858312143536834,
+  "min": 243.199,
+  "median": 253.158,
+  "p95": 284.93755,
+  "p99": 322.43931000000003,
+  "max": 410.045
+ },
+ "tflite_f32_bytes": 27132,
+ "tflite_f32_default": {
+  "n": 2000,
+  "mean": 2.0167105,
+  "std": 0.3105289981463084,
+  "min": 1.813,
+  "median": 1.913,
+  "p95": 2.505,
+  "p99": 2.605,
+  "max": 8.296
+ },
+ "tflite_f32_builtin_ref": {
+  "n": 2000,
+  "mean": 4.533694499999999,
+  "std": 0.47120209164407373,
+  "min": 4.398,
+  "median": 4.499,
+  "p95": 4.599,
+  "p99": 4.7791,
+  "max": 21.891
+ },
+ "tflite_int8_bytes": 11184,
+ "tflite_int8_default": {
+  "n": 2000,
+  "mean": 1.7380605,
+  "std": 0.24942792914938375,
+  "min": 1.633,
+  "median": 1.723,
+  "p95": 1.803,
+  "p99": 1.863,
+  "max": 9.457
+ },
+ "tflite_int8_builtin_ref": {
+  "n": 2000,
+  "mean": 2.6255455000000003,
+  "std": 0.2724925410534204,
+  "min": 2.435,
+  "median": 2.545,
+  "p95": 2.81505,
+  "p99": 2.866,
+  "max": 8.717
+ }
+}
